@@ -1,10 +1,435 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="H — notes on Celonis, process mining, data engineering, SAP, PQL, SQL and automation."
+    >
+
+    <title>H / Engineering — Process Mining &amp; Data</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <p>Welcome to my GitHub Pages website.</p>
+
+<div class="site-wrapper">
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <a href="index.html" class="brand">
+            <span class="brand-symbol">H</span>
+            <span class="brand-name">ENGINEERING</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="blog.html">NOTES</a>
+            <a href="#topics">TOPICS</a>
+            <a href="#work">WORK</a>
+            <a href="about.html">ABOUT</a>
+
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" type="button">
+                <span></span>
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         PROFILE + INTRO
+    ====================================================== -->
+
+    <main>
+
+        <section class="profile-section">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+
+                <div class="avatar" aria-hidden="true">H</div>
+
+                <h1 class="sidebar-name">H</h1>
+                <p class="sidebar-role">Process Mining &amp; Data Engineer</p>
+
+                <p class="sidebar-bio">
+                    I build and untangle processes — mostly in Celonis, mostly
+                    fed by SAP. This site is where the notes-to-self end up
+                    once they're useful to someone other than me.
+                </p>
+
+                <ul class="sidebar-meta">
+                    <li>
+                        <span class="meta-label">Based</span>
+                        <span class="meta-value">Remote / CET</span>
+                    </li>
+                    <li>
+                        <span class="meta-label">Focus</span>
+                        <span class="meta-value">Celonis, SAP, PQL, SQL</span>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-links">
+                    <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub<span>↗</span></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn<span>↗</span></a></li>
+                    <li><a href="https://x.com/" target="_blank" rel="noopener">X / Twitter<span>↗</span></a></li>
+                    <li><a href="mailto:hello@example.com">Email<span>↗</span></a></li>
+                </ul>
+
+                <a href="cv.pdf" class="button button-outline sidebar-cv">
+                    DOWNLOAD CV
+                    <span>↓</span>
+                </a>
+
+            </aside>
+
+
+            <!-- INTRO -->
+            <div class="intro">
+
+                <div class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    PROCESS MINING / DATA / AUTOMATION
+                </div>
+
+                <h2 class="intro-heading">
+                    Building systems
+                    <em>around processes.</em>
+                </h2>
+
+                <p class="intro-description">
+                    Practical notes from working with Celonis, SAP, SQL, PQL,
+                    data engineering and automation.
+                    <span>No fluff. Just things worth knowing.</span>
+                </p>
+
+                <div class="hero-actions">
+                    <a href="blog.html" class="button button-dark">
+                        EXPLORE NOTES
+                        <span>↗</span>
+                    </a>
+                    <a href="#featured" class="text-link">
+                        START WITH THE LATEST
+                        <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="pipeline" aria-hidden="true">
+                    <div class="pipeline-node">
+                        <span class="node-number">01</span>
+                        <strong>SAP</strong>
+                        <small>SOURCE</small>
+                    </div>
+                    <div class="pipeline-connector"><span></span></div>
+                    <div class="pipeline-node">
+                        <span class="node-number">02</span>
+                        <strong>ETL</strong>
+                        <small>TRANSFORM</small>
+                    </div>
+                    <div class="pipeline-connector"><span></span></div>
+                    <div class="pipeline-node active">
+                        <span class="node-number">03</span>
+                        <strong>CELONIS</strong>
+                        <small>PROCESS</small>
+                    </div>
+                    <div class="pipeline-connector"><span></span></div>
+                    <div class="pipeline-node">
+                        <span class="node-number">04</span>
+                        <strong>AUTOMATE</strong>
+                        <small>ACTION</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             TICKER
+        ====================================================== -->
+
+        <div class="ticker">
+            <div class="ticker-track">
+                <span>CELONIS</span><i>✦</i>
+                <span>PROCESS MINING</span><i>✦</i>
+                <span>DATA ENGINEERING</span><i>✦</i>
+                <span>SAP</span><i>✦</i>
+                <span>PQL</span><i>✦</i>
+                <span>AUTOMATION</span><i>✦</i>
+                <span>CELONIS</span><i>✦</i>
+                <span>PROCESS MINING</span><i>✦</i>
+            </div>
+        </div>
+
+
+        <!-- =====================================================
+             FEATURED
+        ====================================================== -->
+
+        <section id="featured" class="content-section">
+
+            <div class="section-header">
+                <span class="section-index">01</span>
+                <span class="section-title">FEATURED NOTE</span>
+                <span class="section-line"></span>
+                <span class="section-meta">SELECTED</span>
+            </div>
+
+            <article class="featured">
+
+                <div class="featured-main">
+                    <div class="article-tag">DATA ENGINEERING</div>
+
+                    <h3>
+                        Why Data Pool Versioning
+                        <span>Matters in Production</span>
+                    </h3>
+
+                    <p>
+                        A production data load failure can break far more
+                        than a pipeline. Proper versioning gives you a
+                        safety net when a deployment does not go as planned.
+                    </p>
+
+                    <a href="posts/data-pool-versioning.html" class="article-link">
+                        READ NOTE
+                        <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="featured-aside">
+                    <div class="featured-number">01</div>
+
+                    <div class="featured-meta">
+                        <div><span>DATE</span><strong>17 AUG 2026</strong></div>
+                        <div><span>READ</span><strong>06 MIN</strong></div>
+                        <div><span>TOPIC</span><strong>CELONIS</strong></div>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- =====================================================
+             LATEST NOTES
+        ====================================================== -->
+
+        <section class="content-section">
+
+            <div class="section-header">
+                <span class="section-index">02</span>
+                <span class="section-title">LATEST NOTES</span>
+                <span class="section-line"></span>
+                <a href="blog.html" class="section-meta section-link">ALL NOTES ↗</a>
+            </div>
+
+            <div class="notes-list">
+
+                <a href="posts/ccpm-vs-ocpm.html" class="note">
+                    <div class="note-number">01</div>
+                    <div class="note-body">
+                        <span class="article-tag">PROCESS MINING</span>
+                        <h3>CCPM vs OCPM: When Should You Use Each?</h3>
+                        <p>The practical difference between classical and object-centric process mining.</p>
+                    </div>
+                    <div class="note-date">AUG<br><strong>17</strong></div>
+                    <div class="note-arrow">↗</div>
+                </a>
+
+                <a href="#" class="note">
+                    <div class="note-number">02</div>
+                    <div class="note-body">
+                        <span class="article-tag">SAP / CELONIS</span>
+                        <h3>What I Learned Working With SAP ECC and S/4HANA</h3>
+                        <p>What actually changes when your source system moves from ECC to S/4HANA.</p>
+                    </div>
+                    <div class="note-date">AUG<br><strong>12</strong></div>
+                    <div class="note-arrow">↗</div>
+                </a>
+
+                <a href="#" class="note">
+                    <div class="note-number">03</div>
+                    <div class="note-body">
+                        <span class="article-tag">PROCESS MINING</span>
+                        <h3>Why Process Variants Matter</h3>
+                        <p>Why aggregate KPIs can hide the problems happening inside individual variants.</p>
+                    </div>
+                    <div class="note-date">AUG<br><strong>08</strong></div>
+                    <div class="note-arrow">↗</div>
+                </a>
+
+                <a href="#" class="note">
+                    <div class="note-number">04</div>
+                    <div class="note-body">
+                        <span class="article-tag">PQL / SQL</span>
+                        <h3>The SQL You Write Before You Write PQL</h3>
+                        <p>Why understanding the data underneath your process model matters.</p>
+                    </div>
+                    <div class="note-date">JUL<br><strong>29</strong></div>
+                    <div class="note-arrow">↗</div>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             TOPICS
+        ====================================================== -->
+
+        <section id="topics" class="content-section topics-section">
+
+            <div class="section-header">
+                <span class="section-index">03</span>
+                <span class="section-title">TOPICS</span>
+                <span class="section-line"></span>
+                <span class="section-meta">EXPLORE</span>
+            </div>
+
+            <div class="topics-grid">
+
+                <a href="#" class="topic">
+                    <span>01</span>
+                    <div><strong>CELONIS</strong><small>PROCESS MINING PLATFORM</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="#" class="topic">
+                    <span>02</span>
+                    <div><strong>DATA</strong><small>ETL / DATA MODELLING</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="#" class="topic">
+                    <span>03</span>
+                    <div><strong>PQL / SQL</strong><small>QUERIES / ANALYSIS</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="#" class="topic">
+                    <span>04</span>
+                    <div><strong>SAP</strong><small>ECC / S4HANA</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="#" class="topic">
+                    <span>05</span>
+                    <div><strong>OCPM</strong><small>OBJECT-CENTRIC MINING</small></div>
+                    <b>↗</b>
+                </a>
+
+                <a href="#" class="topic">
+                    <span>06</span>
+                    <div><strong>AUTOMATION</strong><small>ACTION FLOWS / AI</small></div>
+                    <b>↗</b>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WORK / PROJECTS STRIP
+        ====================================================== -->
+
+        <section id="work" class="content-section work-section">
+
+            <div class="section-header">
+                <span class="section-index">04</span>
+                <span class="section-title">SELECTED WORK</span>
+                <span class="section-line"></span>
+                <span class="section-meta">2023 — 2026</span>
+            </div>
+
+            <div class="work-list">
+
+                <div class="work-row">
+                    <span class="work-year">2026</span>
+                    <div class="work-body">
+                        <strong>Process mining rollout, retail finance</strong>
+                        <small>Celonis EMS · SAP S/4HANA · 40+ report suites migrated</small>
+                    </div>
+                    <span class="work-tag">CELONIS</span>
+                </div>
+
+                <div class="work-row">
+                    <span class="work-year">2025</span>
+                    <div class="work-body">
+                        <strong>Order-to-cash data model rebuild</strong>
+                        <small>SAP ECC extraction · PQL data model · Action Flows automation</small>
+                    </div>
+                    <span class="work-tag">SAP</span>
+                </div>
+
+                <div class="work-row">
+                    <span class="work-year">2024</span>
+                    <div class="work-body">
+                        <strong>Procure-to-pay variant analysis</strong>
+                        <small>OCPM prototype · variant clustering · executive KPI pack</small>
+                    </div>
+                    <span class="work-tag">OCPM</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT STRIP
+        ====================================================== -->
+
+        <section class="about-strip">
+            <div class="about-label">ABOUT THIS SITE</div>
+
+            <div class="about-copy">
+                <h2>A technical notebook, <em>not a textbook.</em></h2>
+                <p>
+                    Notes from real projects, things that broke, things that
+                    worked and concepts that took longer than they should
+                    have to understand.
+                </p>
+                <a href="about.html">MORE ABOUT THE AUTHOR ↗</a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+        <div class="footer-brand">H / ENGINEERING</div>
+        <div class="footer-center">CELONIS · PROCESS MINING · DATA · AUTOMATION</div>
+        <div class="footer-copy">© 2026</div>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
